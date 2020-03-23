@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hello, flex!</title>
+	
+    <style>
+      
+      .flex-container {
+        padding: 0; 
+        margin: 0 12px;
+        
+        /* Создадим flex-контекст */
+        display: flex;
+        /*
+        display: inline-flex;
+        */
+
+          /* определим направление потока
+              * flex-direction: row | row-reverse | column | column-reverse
+              * Устанавливает главную ось main-axis, определяя тем самым направление для flex-элементов, размещаемых в контейнере.
+              * row (по умолчанию): слева направо для ltr, справа налево для rtl;
+              * row-reverse: справа налево для ltr, слева направо для rtl;
+              * column: аналогично row, сверху вниз;
+              * column-reverse: аналогично row-reverse, снизу вверх.
+            */
+
+            /* row (по умолчанию): слева направо для ltr, справа налево для rtl; */
+            /*flex-direction: row;*/
+            /* row-reverse: справа налево для ltr, слева направо для rtl; */
+            /*  flex-direction:row-reverse;*/ 
+            /* 
+            column: аналогично row, сверху вниз; 
+            flex-direction:column;
+            */
+            
+            /* column-reverse: аналогично row-reverse, снизу вверх. */
+            /* flex-direction:column-reverse; */
+            /* flex-direction:initial; */
+            /* flex-direction:unset; */
+            
+            /*  определим направление потока и хотим ли мы, 
+                чтобы элементы переносились на новую строку
+                flex-wrap: Определяет, будет ли контейнер однострочным или многострочным, а также направление поперечной оси, определяющей направление, в котором будут располагаться новые строки.
+                flex-wrap: nowrap | wrap | wrap-reverse
+                nowrap (по умолчанию): однострочный / слева направо для ltr, справа налево для rtl;
+                wrap: многострочный / слева направо для ltr, справа налево для rtl;
+                wrap-reverse: многострочный / справа налево для ltr, слева направо для rtl.
+            flex-direction: row;   
+            */
+            
+            /* flex-direction:row-reverse; */
+            /* flex-direction:column; */
+            /* flex-direction:column-reverse; */
+            /* flex-direction:initial; */
+            /* flex-direction:unset; */
+            /*
+            flex-wrap: wrap; 
+            flex-wrap: nowrap;
+            */
+            
+            /* flex-wrap: wrap-reverse; */
+
+        /*  определим направление потока и хотим ли мы, чтобы элементы
+                переносились на новую строку
+                flex-flow: row wrap;
+                * это тоже самое, что и:
+                * flex-direction: row;
+                * flex-wrap: wrap;
+                flex-flow: row wrap;
+        */
+            
+        /* определим направление потока и хотим ли мы, чтобы элементы
+                переносились на новую строку
+              flex-flow: row wrap;
+        */
+        
+        /* определим, как будет распределяться пространство 
+            flex-start | flex-end | center | space-between | space-around
+            justify-content: space-between;
+        */
+            
+      }
+     
+      .flex-item {
+          background: rgb(65, 245, 95);
+          padding: 10px 5px;
+          width: 240px;
+          height: 180px;
+      }
+      
+      .flex-item img{
+        max-width: 100%;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <div class="flex-container">
+        <span class="flex-item"><img src="../assets/images/1.jpg"></span>
+        <span class="flex-item"><img src="../assets/images/2.jpg"></span>
+        <span class="flex-item"><img src="../assets/images/4-1.jpg"></span>
+        <span class="flex-item"><img src="../assets/images/5.jpg"></span>
+        <span class="flex-item"><img src="../assets/images/6.jpg"></span>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Peculiar Shopaholic</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+        
+        .navbar-nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+            flex-basis: 80%;
+        }
+
+        .navbar-nav li {
+            width: 100%;
+        }
+
+        .navbar-brand {
+            color: white;
+            flex-basis: 10%;
+            padding: 1rem 2rem;
+            background: #15025af1;
+        }
+
+        .navbar-nav a {
+            color: white;
+            display: block;
+            padding: 1rem 1rem;
+            background: #15025af1;
+            transition: .5s;
+        }
+
+        .navbar-nav a:hover {
+            background: #2a04b6f1;
+            font-weight: 700;
+        }
+
+        .form-inline {
+            display: flex;
+            padding: 0rem 2rem;
+            background: #15025af1;
+            flex-basis: 10%;
+        }
+
+        .form-inline button {
+            background: #15025af1;
+            color: white;
+            padding: 0 2rem;
+            border-radius: 0.3em;
+            border: 1px solid #00007b;
+        }
+
+        .form-inline input {
+            border-radius: 0.3em;
+            border: 1px solid #00007b;
+        }
+
+        .form-inline button:hover {
+            background: white;
+            color: #15025af1;
+        }
+
+        @media screen and (min-width: 600px) {
+            .navbar-nav {
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- sidebar -->
+    <!-- navigation -->
+    <nav class="navbar">
+        <a class="navbar-brand" href="./index.html">Peculiar Shopaholic</a>
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link current" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Catalog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Conatct</a>
+            </li>
+        </ul>
+        <form class="form-inline">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn" type="submit">Search</button>
+        </form>
+    </nav>
+    <!-- header -->
+    <!-- main -->
+    <!-- footer -->
+</body>
+
+</html>
